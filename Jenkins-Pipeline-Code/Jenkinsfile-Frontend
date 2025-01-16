@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/jaiswamy/3-tier-automated-project-main.git'
+                git branch: 'main', url: 'https://github.com/jaiswamy/3-tier-automated-project.git'
             }
         }
         stage('Sonarqube Analysis') {
@@ -74,7 +74,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/jaiswamy/3-tier-automated-project-main.git'
+                git branch: 'main', url: 'https://github.com/jaiswamy/3-tier-automated-project.git'
             }
         }
         stage('Update Deployment file') {
